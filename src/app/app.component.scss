@@ -1,0 +1,26 @@
+nav {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    &:not(:first-child) {
+      border-left: 1px solid #ccc;
+      padding-left: 10px;
+    }
+    &:hover {
+      color: red;
+    }
+    &.active {
+      color: red;
+    }
+  }
+}
